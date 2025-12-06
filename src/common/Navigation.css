@@ -1,0 +1,43 @@
+@import "tailwindcss";
+
+.conteiner {
+    max-width: 1170px;
+    margin: 0 auto;
+}
+
+.menu ul li {
+    position: relative;
+}
+
+.menu ul li {
+    position: relative;
+    padding-bottom: 5px;
+}
+
+.menu ul li::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 2px;
+    width: 0%;
+    background-color: black;
+    transition: width 0.3s ease;
+}
+
+.menu ul li:hover::after {
+    
+    width: 100%;
+}
+
+.red::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 2px;
+    width: 100%;
+    background-color: black;
+    transition: width 0.3s ease;
+}
+
